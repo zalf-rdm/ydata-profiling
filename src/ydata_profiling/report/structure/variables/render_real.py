@@ -67,6 +67,11 @@ def render_real(config: Settings, summary: dict) -> dict:
                 "alert": "p_infinite" in summary["alert_fields"],
             },
             {
+                "name": "Skewness",
+                "value": fmt(summary["skewness"]),
+                "alert": "skewness" in summary["alert_fields"],
+            },
+            {
                 "name": "Mean",
                 "value": fmt_numeric(
                     summary["mean"], precision=config.report.precision

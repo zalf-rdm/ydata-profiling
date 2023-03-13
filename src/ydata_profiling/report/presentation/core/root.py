@@ -11,11 +11,11 @@ class Root(ItemRenderer):
     """
 
     def __init__(
-        self, name: str, body: Renderable, footer: Renderable, style: Style, **kwargs
+        self, name: str, body: Renderable, style: Style, **kwargs
     ):
         super().__init__(
             "report",
-            {"body": body, "footer": footer, "style": style},
+            {"body": body, "style": style},
             name=name,
             **kwargs
         )
@@ -31,5 +31,4 @@ class Root(ItemRenderer):
         obj.__class__ = cls
         if "body" in obj.content:
             flv(obj.content["body"])
-        if "footer" in obj.content:
-            flv(obj.content["footer"])
+
