@@ -68,7 +68,7 @@ def render_real(config: Settings, summary: dict) -> dict:
             },
             {
                 "name": "Skewness",
-                "value": fmt(summary["skewness"], precision=config.report.precision),
+                "value": fmt_numeric(summary["skewness"], precision=config.report.precision),
                 "alert": "skewness" in summary["alert_fields"],
             },
             {
