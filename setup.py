@@ -26,7 +26,7 @@ setup(
     author_email="opensource@ydata.ai",
     packages=find_packages("src"),
     package_dir={"": "src"},
-    url="https://github.com/ydataai/ydata-profiling",
+    url="https://github.com/zalf-rdm/ydata-profiling",
     license="MIT",
     description="Generate profile report for pandas DataFrame",
     python_requires=">=3.7, <3.12",
